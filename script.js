@@ -1,11 +1,11 @@
 // changes the role and img
 const rolesArray = [
-  { role: "a Front-End developer", img: "images/frontend.jpg" },
-  { role: "a dwarf shadow priest", img: "images/Maffepriest.jpg" },
-  { role: "a Nederlander", img: "images/koningsdag.jpg" },
-  { role: "a database dabbler", img: "images/database.png" },
-  { role: "a Back-end novice", img: "images/backend.png" },
-  { role: "an Avantouinti uimari", img: "images/avantouinti.jpg" },
+  { role: "a Front-End developer", img: "images/frontendSquare.jpg" },
+  { role: "a dwarf shadow priest", img: "images/MaffepriestSquare.jpg" },
+  { role: "a Nederlander", img: "images/koningsdagSquare.jpg" },
+  { role: "a database dabbler", img: "images/databasesquare.jpg" },
+  { role: "a Back-end novice", img: "images/backendSquare.png" },
+  { role: "an Avantouinti uimari", img: "images/avantouintiSquare.jpg" },
 ];
 
 const rolesId = document.getElementById("rolesMarius");
@@ -19,6 +19,7 @@ const setRole = () => {
   setInterval(function () {
     rolesId.innerHTML = rolesArray[rolesIndex].role;
     imgId.src = rolesArray[rolesIndex].img;
+    imgId.alt = `Picture of ${rolesArray[rolesIndex].role}`;
     if (rolesIndex === rolesArray.length - 1) {
       rolesIndex = 0;
     } else {
