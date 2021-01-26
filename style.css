@@ -51,9 +51,7 @@ table {
 /* My css */
 
 
-nav {
-   width: 100%;
-}
+
 
 /* fix short sizes */
 nav ul{
@@ -72,5 +70,61 @@ nav ul a{
 
 nav ul a:hover{
     background-color: aqua;
+    
+}
+
+#roleImg img{
+    height: auto;
+    width: 30vw;
+}
+.rowContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 5px;
+    padding: 10px;
+}
+
+#testingSection-1 {
+    height: 800px;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    align-content: space-between;
+    
+}
+
+.divs{
+    width: 200px;
+    height: 200px;
+}
+#div1{
+    background-color: violet;
+}
+#div2{
+    background-color: rgb(26, 18, 128);
+}
+#div3{
+    background-color: rgb(31, 207, 15);
+}
+
+#testingSection-2 {
+    height: 800px;
+    background-color: rgb(164, 216, 151);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
     
 }
