@@ -50,28 +50,34 @@ table {
 
 /* My css */
 
+body{
+    --main-font: 'Poppins', sans-serif;
+    --main-color-dark: rgb(100, 166, 189);
+    --main-color: rgb(144, 168, 195);
+    --secondary-color-dark: rgb(173, 167, 201);
+    --secondary-color: rgb(215, 185, 213);
+    --secondary-color-light: rgb(244, 202, 224);
+    --text-color: black;
+    background-color: var(--secondary-color-light);
+    font-family: var(--main-font);
+    font-size: 20px;
 
-
-
-/* fix short sizes */
+}
 nav ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
     list-style: none;
     margin: 2em;
+    
 }
-
-
-
 nav ul a{
     text-decoration: none;
     color: black;
     padding: 2vw;
 }
-
 nav ul a:hover{
-    background-color: aqua;
+    background-color: var(--main-color-dark);
     
 }
 
@@ -79,6 +85,7 @@ nav ul a:hover{
     height: auto;
     width: 30vw;
     min-width: 300px;
+    border-radius: 5%;
 }
 .rowContainer{
     display: flex;
@@ -86,7 +93,6 @@ nav ul a:hover{
     justify-content: center;
     align-items: center;
 }
-
 section{
     display: flex;
     flex-direction: column;
@@ -94,6 +100,77 @@ section{
     margin: 5px;
     padding: 10px;
 }
+#rolesMarius{
+    background-color: var(--main-color);
+    padding: 2px;
+}
+
+.rowContainer{
+    display: flex;
+    flex-direction: column;
+    margin: 40px
+}
+.projectCard{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    
+}
+
+.projectText{
+    flex-basis: 50%;
+
+}
+ .projectCardTitle{
+    font-weight: 800;
+    font-size: 30px;
+    font-style: italic;
+ }
+ .projectDescription{
+    line-height: 20px;
+ }
+ .projectButton{
+    padding: 10px;
+    font-size: 1.5rem;
+    background-color: var(--main-color-dark);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0.3rem rgba(121, 121, 121, 0.70);
+    margin-top: 10%;
+    margin-left: 10%;
+ }
+
+ /* check this */
+ .projectButton:hover{
+     filter: brightness(110%);
+ }
+
+ .projectButton:active{
+     transform: translate(0,0.3rem);
+     box-shadow: 0 0.1rem rgba(121, 121, 121, 0.70)
+ }
+
+ .imageContainer{
+     background-color: cornsilk;
+     border-radius: 5%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-basis: 40%;
+    padding: 20px;
+     
+    
+ }
+ .projectImg{
+    width: 80%;
+    min-width: 300px;
+ }
+
+
+
 
 #testingSection-1 {
     height: 800px;

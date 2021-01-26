@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,800;1,800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" type="text/css" />
   </head>
   <body>
@@ -23,9 +28,9 @@
     <main>
       <section>
         <div class="rowContainer">
+          <!-- make transition way smooter. Maybe rolling up or down -->
           <figure id="roleImg">
             <img id="imgRolesMarius" src="" />
-            <figcaption>Picture of</figcaption>
           </figure>
           <p>I am <span id="rolesMarius"></span></p>
           <!-- maybe greetings in different languages in different times of the day? -->
@@ -36,7 +41,25 @@
 
     <!-- projects -->
     <section>
-      <div></div>
+      <div class="rowContainer">
+        <div class="projectCard">
+          <div class="projectText">
+            <h3 class="projectCardTitle">Fitness Portal</h3>
+            <p class="projectDescription">
+              My submission for the final project of my front-end development
+              course. It is a portal for a personal trainer, which shows the
+              trainings and customers. The data comes from heroku, so it takes a
+              while to see the result! Allows the data to be changed by using
+              CRUD operations, the back-end is provided by the teacher for this
+              course. Made with react.
+            </p>
+            <button class="projectButton">See live demo</button>
+          </div>
+          <div class="imageContainer">
+            <img class="projectImg" src="images/fitnessPortal.PNG" />
+          </div>
+        </div>
+      </div>
     </section>
     <!-- CV -->
     <section>
