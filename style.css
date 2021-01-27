@@ -60,15 +60,17 @@ body{
     --text-color: black;
     background-color: var(--secondary-color-light);
     font-family: var(--main-font);
-    font-size: 20px;
+    font-size: 18px;
+ 
 
 }
 nav ul{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
     list-style: none;
-    margin: 2em;
+    margin-top: 10px;
     
 }
 nav ul a{
@@ -84,7 +86,6 @@ nav ul a:hover{
 #roleImg img{
     height: auto;
     width: 30vw;
-    min-width: 300px;
     border-radius: 5%;
 }
 .rowContainer{
@@ -108,19 +109,22 @@ section{
 .rowContainer{
     display: flex;
     flex-direction: column;
-    margin: 40px
+    margin: 40px;
 }
 .projectCard{
     display: flex;
     flex-direction: row-reverse;
-    justify-content:space-between;
+    justify-content:space-around;
     align-items: center;
     flex-wrap: wrap-reverse;
+    margin-top: 20px;
+    padding: 40px;
+    width: 100%;
     
 }
 
 .projectText{
-    flex-basis: 50%;
+    width: 50%;
 
 }
  .projectCardTitle{
@@ -131,6 +135,25 @@ section{
  .projectDescription{
     line-height: 20px;
  }
+ 
+ .imageContainer{
+    background-color: cornsilk;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    max-height: auto;
+    
+   
+}
+.projectImg{
+   width: 90%;
+   height: auto;
+   max-width: 90%;
+}
+
+
  .projectButton{
     padding: 10px;
     font-size: 1.5rem;
@@ -153,58 +176,23 @@ section{
      box-shadow: 0 0.1rem rgba(121, 121, 121, 0.70)
  }
 
+/* media queries */
+@media only screen and (max-width: 600px){
  .imageContainer{
-     background-color: cornsilk;
-     border-radius: 5%;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     flex-basis: 40%;
-    padding: 20px;
-     
-    
- }
- .projectImg{
-    width: 80%;
-    min-width: 300px;
+     min-width: 300px;
  }
 
-
-
-
-#testingSection-1 {
-    height: 800px;
-    background-color: aquamarine;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-flow: wrap;
-    align-content: space-between;
-    
+ .projectText{
+     width: 300px;
+     margin: 15px;
+ }
+ .projectCard{
+     padding: 10px;
+ }
 }
 
-.divs{
-    width: 200px;
-    height: 200px;
-}
-#div1{
-    background-color: violet;
-}
-#div2{
-    background-color: rgb(26, 18, 128);
-}
-#div3{
-    background-color: rgb(31, 207, 15);
-}
-
-#testingSection-2 {
-    height: 800px;
-    background-color: rgb(164, 216, 151);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  
-    
+@media only screen and (max-width: 1100px){
+    #roleImg img{
+        width: 300px;
+    }
 }
