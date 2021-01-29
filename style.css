@@ -70,24 +70,20 @@ nav ul{
     flex-wrap: wrap;
     justify-content: space-around;
     list-style: none;
-    margin-top: 10px;
     
 }
 nav ul a{
     text-decoration: none;
     color: black;
     padding: 2vw;
+    display: flex;
 }
 nav ul a:hover{
     background-color: var(--main-color-dark);
     
 }
 
-#roleImg img{
-    height: auto;
-    width: 30vw;
-    border-radius: 5%;
-}
+
 .rowContainer{
     display: flex;
     flex-direction: column;
@@ -104,6 +100,17 @@ section{
 #rolesMarius{
     background-color: var(--main-color);
     padding: 2px;
+    transform: translate3d(-50%, 0px, 0px);
+    transition: 0.4s;
+}
+#roleImg img{
+    height: auto;
+    width: 30vw;
+    border-radius: 5%;
+    margin-bottom: 20px;
+}
+#introText{
+    margin-top: 20px;
 }
 
 .rowContainer{
@@ -142,13 +149,12 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 400px;
+    width: 600px;
     max-height: auto;
     
    
 }
 .projectImg{
-   width: 90%;
    height: auto;
    max-width: 90%;
 }
@@ -164,11 +170,14 @@ section{
     box-shadow: 0 0.3rem rgba(121, 121, 121, 0.70);
     margin-top: 10%;
     margin-left: 10%;
+    transition: all .3s ;
  }
 
  /* check this */
  .projectButton:hover{
      filter: brightness(110%);
+     transform: scale(1.1);
+     transition: all .3s ;
  }
 
  .projectButton:active{

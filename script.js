@@ -10,10 +10,11 @@ const rolesArray = [
 
 const rolesId = document.getElementById("rolesMarius");
 const imgId = document.getElementById("imgRolesMarius");
+const rolesId2 = document.getElementById("rolesMarius2");
 let rolesIndex = 0;
 rolesId.innerHTML = rolesArray[rolesIndex].role;
 imgId.src = rolesArray[rolesIndex].img;
-
+5;
 // add iteration button that also stops the automatic rotation
 const setRole = () => {
   setInterval(function () {

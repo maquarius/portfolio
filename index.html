@@ -32,9 +32,13 @@
           <figure id="roleImg">
             <img id="imgRolesMarius" src="" />
           </figure>
-          <p>I am <span id="rolesMarius"></span></p>
+          <p>
+            I am <span id="rolesMarius"></span><span id="rolesMarius2"></span>
+          </p>
           <!-- maybe greetings in different languages in different times of the day? -->
-          <p>Hello! I am Dutch Front-End developer living in Helsinki.</p>
+          <p id="introText">
+            Hello! I am Dutch Front-End developer living in Helsinki.
+          </p>
         </div>
       </section>
     </main>
@@ -54,7 +58,14 @@
               CRUD operations, the back-end is provided by the teacher for this
               course. Made with react.
             </p>
-            <button class="projectButton">See live demo</button>
+            <button
+              class="projectButton"
+              onclick="window.open('https://playlistmaker-spotify.surge.sh/','jamming')"
+              target="_blank"
+              type="button"
+            >
+              See live demo
+            </button>
           </div>
           <div class="imageContainer">
             <img class="projectImg" src="images/fitnessPortal.PNG" />
@@ -62,36 +73,71 @@
         </div>
         <div class="projectCard">
           <div class="projectText">
-            <h3 class="projectCardTitle">Fitness Portal</h3>
+            <h3 class="projectCardTitle">University portal</h3>
             <p class="projectDescription">
-              My submission for the final project of my front-end development
-              course. It is a portal for a personal trainer, which shows the
-              trainings and customers. The data comes from heroku, so it takes a
-              while to see the result! Allows the data to be changed by using
-              CRUD operations, the back-end is provided by the teacher for this
-              course. Made with react.
+              My own university portal containing all of the relevant links. It
+              also allows me to set one goal at a time so that i focus on it
+              better. The name and goal is stored locallly so you can try it out
+              yourself! The background changes depending on the time. Made with
+              JS, HTML and CSS.
             </p>
-            <button class="projectButton">See live demo</button>
+            <button
+              class="projectButton"
+              onclick="window.open('http://myy.haaga-helia.fi/~a1703060/frontpage/','universityPortal')"
+              target="_blank"
+              type="button"
+            >
+              See live demo
+            </button>
           </div>
           <div class="imageContainer">
-            <img class="projectImg" src="images/fitnessPortal.PNG" />
+            <img class="projectImg" src="images/universityPortal.png" />
           </div>
         </div>
         <div class="projectCard">
           <div class="projectText">
-            <h3 class="projectCardTitle">Fitness Portal</h3>
+            <h3 class="projectCardTitle">Jammming</h3>
             <p class="projectDescription">
-              My submission for the final project of my front-end development
-              course. It is a portal for a personal trainer, which shows the
-              trainings and customers. The data comes from heroku, so it takes a
-              while to see the result! Allows the data to be changed by using
-              CRUD operations, the back-end is provided by the teacher for this
-              course. Made with react.
+              This is my implementation of the Codecademy Full-Stack devlepment
+              project. It uses the Spotify API to authenticate and fetch songs,
+              artist or albums based on the seach criteria. Those songs can be
+              added to a playlist that is made in the app and eventually saved
+              to your own spotify account! Uses React. Although i followed a
+              guide while making, i did deviate from it by implementing
+              async/await instead of promises.
             </p>
-            <button class="projectButton">See live demo</button>
+            <button
+              class="projectButton"
+              onclick="window.open('https://playlistmaker-spotify.surge.sh/','jamming')"
+              target="_blank"
+              type="button"
+            >
+              See live demo
+            </button>
           </div>
           <div class="imageContainer">
-            <img class="projectImg" src="images/fitnessPortal.PNG" />
+            <img class="projectImg" src="images/JammingApp.png" />
+          </div>
+        </div>
+        <div class="projectCard">
+          <div class="projectText">
+            <h3 class="projectCardTitle">Restaurant loader</h3>
+            <p class="projectDescription">
+              Using the restaurants API from Wolt. It shows the restaurants in
+              Helsinki. I used this to practice showing an intermidiate loading
+              screen before the images are loaded. Made with React.
+            </p>
+            <button
+              class="projectButton"
+              onclick="window.open('https://maquarius.github.io/woltFrontEnd/','restaurantsHelsinki')"
+              target="_blank"
+              type="button"
+            >
+              See live demo
+            </button>
+          </div>
+          <div class="imageContainer">
+            <img class="projectImg" src="images/restaurantsApp.png" />
           </div>
         </div>
         <div class="projectCard">
@@ -106,7 +152,14 @@
               presentation and I had a shared responsibility for the design with
               Adobe XD.
             </p>
-            <button class="projectButton">See live demo</button>
+            <button
+              class="projectButton"
+              onclick="window.open('https://playlistmaker-spotify.surge.sh/','jamming')"
+              target="_blank"
+              type="button"
+            >
+              See live demo
+            </button>
           </div>
           <div class="imageContainer">
             <img class="projectImg" src="images/moodbeatsPhone.png" />
