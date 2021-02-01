@@ -132,6 +132,9 @@ section{
 
 .projectText{
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
 
 }
  .projectCardTitle{
@@ -171,6 +174,8 @@ section{
     margin-top: 10%;
     margin-left: 10%;
     transition: all .3s ;
+    flex-grow: 0;
+    align-self: flex-start;
  }
 
  /* check this */
@@ -198,10 +203,17 @@ section{
  .projectCard{
      padding: 10px;
  }
+ .projectButton{
+     align-self: center;
+     margin: 0;
+    
+     
+ }
 }
 
 @media only screen and (max-width: 1100px){
     #roleImg img{
         width: 300px;
     }
+    
 }
