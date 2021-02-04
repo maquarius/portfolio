@@ -14,13 +14,27 @@
   <body>
     <header>
       <nav>
+        <button class="hamburger">
+          <img class="first" id="hamburgerSVG" src="./images/burger-menu.svg" />
+          <div class="collapsible">
+            <img id="closeSVG" src="./images/closing.svg" />
+            <ul id="linksCollapsible">
+              <li><a href="#">CV</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#">Skills</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Hobby</a></li>
+              <li><a href="#contactInfo">Contact</a></li>
+            </ul>
+          </div>
+        </button>
         <ul id="nav-id">
           <li><a href="#">CV</a></li>
-          <li><a href="#">Projects</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#">Skills</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Hobby</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#contactInfo">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -46,6 +60,7 @@
     <!-- add -->
     <!-- projects -->
     <section>
+      <h2 id="projects">Projects</h2>
       <div class="rowContainer">
         <div class="projectCard">
           <div class="projectText">
@@ -188,7 +203,11 @@
       <div></div>
     </section>
     <!-- Footer -->
-    <footer><div></div></footer>
+    <footer>
+      <div>
+        <h2 id="contactInfo">My contact info!</h2>
+      </div>
+    </footer>
     <!-- testing div -->
 
     <script src="./script.js"></script>

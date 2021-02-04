@@ -29,3 +29,26 @@ const setRole = () => {
   }, 5000);
 };
 setRole();
+
+const hamburgerButton = document.querySelector(".hamburger");
+const hamburgerSVG = document.querySelector("#hamburgerSVG");
+const closeChild = document.querySelector("#closeSVG");
+const collapsible = document.querySelector(".collapsible");
+const linksCollapsible = document.querySelector("#linksCollapsible");
+
+const openMenu = () => {
+  hamburgerSVG.style.display = "none";
+  collapsible.style.display = "flex";
+  collapsible.style.flexDirection = "column";
+  collapsible.style.flexWrap = "wrap";
+  collapsible.style.width = "60px";
+};
+
+const closeMenu = () => {
+  hamburgerSVG.style.display = "block";
+  collapsible.style.display = "none";
+  menuState = false;
+};
+
+hamburgerSVG.addEventListener("click", openMenu);
+closeChild.addEventListener("click", closeMenu);
