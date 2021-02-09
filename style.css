@@ -52,16 +52,17 @@ table {
 
 body{
     --main-font: 'Poppins', sans-serif;
-    --main-color-dark: rgb(100, 166, 189);
-    --main-color: rgb(144, 168, 195);
-    --secondary-color-dark: rgb(173, 167, 201);
-    --secondary-color: rgb(215, 185, 213);
-    --secondary-color-light: rgb(244, 202, 224);
-    --text-color: black;
-    background-color: #EBEBEB;
+    --main-color-dark: #2c698d;
+    --main-color: #3bb1b1;
+    --main-color-light: #e3f6f5;
+    --secondary-color-dark: #884dff;
+    --secondary-color:#B13B3B;
+    --secondary-color-light: #4dffff;
+    --text-color: #272643;
+    background-color: #ffffff;
     font-family: var(--main-font);
     font-size: 18px;
- 
+    
 
 }
 nav ul{
@@ -131,6 +132,7 @@ nav ul a:hover{
 section{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-content: center;
     margin: 5px;
     padding: 10px;
@@ -187,7 +189,7 @@ section{
  }
  
  .imageContainer{
-    background-color: cornsilk;
+    background-color: var(--main-color-light);
     border-radius: 5%;
     display: flex;
     align-items: center;
@@ -204,24 +206,26 @@ section{
 
 
  .projectButton{
-    padding: 10px;
+    padding: 15px;
     font-size: 1.5rem;
-    background-color: var(--main-color-dark);
+    background-color: var(--secondary-color);
     border-radius: 10px;
     border: none;
     cursor: pointer;
-    box-shadow: 0 0.3rem 4px  rgba(121, 121, 121, 0.70);
+    box-shadow: 0 0.3rem 4px  rgba(121, 121, 121, 0.4);
     margin-top: 10%;
-    transition: all .3s ;
+    transition: all .1s ;
     flex-grow: 0;
     align-self: center;
+    
  }
 
  /* check this */
  .projectButton:hover{
      filter: brightness(110%);
      transform: scale(1.1);
-     transition: all .3s ;
+     transition: all .1s ;
+     box-shadow: 0 0.3rem 4px  rgba(121, 121, 121, 0.90);
  }
 
  .projectButton:active{
@@ -230,9 +234,6 @@ section{
  }
 
 /* media queries */
-@media only screen and (max-width: 600px){
-
-}
 
 @media only screen and (max-width: 600px){
  .imageContainer{
@@ -267,10 +268,76 @@ section{
     
 }
 
+
+/* CV block */
+#cvDiv{
+    width: 90%;
+    height: 200px;
+    background-color: #3bb1b1;
+    align-self: center;
+    border-radius: 20px;
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+#backgroundCv{
+    position: relative;;
+}
+
+
+.circle{
+position: absolute;
+border-radius: 50%;
+}
+
+#circle-1{
+height: 60vw;
+width: 60vw;
+top: -10vw;
+right: -100vw;
+background-color: white;
+z-index: 1;
+}
+
+#circle-2{
+height: 60vw;
+width: 60vw;
+bottom: -0vw;
+left: -30vw;
+background-color: var(--main-color-dark);
+z-index: 1;
+}
+#circle-3{
+height: 60vw;
+width: 60vw;
+top: -5vw;
+left: -35vw;
+background-color: var(--main-color-light);
+opacity: 0.3;
+z-index: 1;
+}
+
+#downloadCv{
+margin: 0;
+z-index: 2;
+}
+#downloadText{
+    z-index: 2;
+    position: relative;
+    
+    font-size: 30px;
+}
+
+#wink{
+    cursor: pointer;
+}
 /* animated background */
 
 .area{
-    background: #4e54c8;  
+    background: var(--main-color);  
     background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
     position: absolute;
     top: 0px;
@@ -295,7 +362,7 @@ section{
     list-style: none;
     width: 20px;
     height: 20px;
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--main-color-light);
     animation: animate 25s linear infinite;
     bottom: -150px;
     

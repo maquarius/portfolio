@@ -52,3 +52,32 @@ const closeMenu = () => {
 
 hamburgerSVG.addEventListener("click", openMenu);
 closeChild.addEventListener("click", closeMenu);
+
+let winkButton = document.querySelector("#wink");
+const downloadText = document.querySelector("#downloadText");
+function resetText() {
+  downloadText.innerHTML = "Download my CV to find out more about me ";
+  let winkSpan = document.createElement("span");
+  winkSpan.innerHTML = ":)";
+  winkSpan.id = "wink";
+  downloadText.appendChild(winkSpan);
+  winkButton = document.querySelector("#wink");
+  winkButton.addEventListener("click", winking);
+  winkCounter = 0;
+}
+let winkCounter = 0;
+
+const winking = () => {
+  winkButton.innerHTML = ";)";
+  winkCounter++;
+  if (winkCounter == 6) {
+    downloadText.innerHTML = "Please stop winking at yourself";
+    setTimeout(resetText, 3000);
+  } else {
+    setTimeout(function () {
+      winkButton.innerHTML = ":)";
+    }, 400);
+  }
+};
+
+winkButton.addEventListener("click", winking);
