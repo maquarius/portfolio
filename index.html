@@ -12,49 +12,55 @@
     <link rel="stylesheet" href="./style.css" type="text/css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <button class="hamburger">
-          <img class="first" id="hamburgerSVG" src="./images/burger-menu.svg" />
-          <div class="collapsible">
-            <img id="closeSVG" src="./images/closing.svg" />
-            <ul id="linksCollapsible">
-              <li><a href="#">CV</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#">Skills</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Hobby</a></li>
-              <li><a href="#contactInfo">Contact</a></li>
-            </ul>
+    <div id="top">
+      <header>
+        <nav>
+          <button class="hamburger">
+            <img
+              class="first"
+              id="hamburgerSVG"
+              src="./images/burger-menu.svg"
+            />
+            <div class="collapsible">
+              <img id="closeSVG" src="./images/closing.svg" />
+              <ul id="linksCollapsible">
+                <li><a href="#">CV</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Hobby</a></li>
+                <li><a href="#contactInfo">Contact</a></li>
+              </ul>
+            </div>
+          </button>
+          <ul id="nav-id">
+            <li><a href="#">CV</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Hobby</a></li>
+            <li><a href="#contactInfo">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- about me, picture, i am is the main content -->
+      <main>
+        <section>
+          <div class="rowContainer">
+            <!-- make transition way smooter. Maybe rolling up or down -->
+            <figure id="roleImg">
+              <img id="imgRolesMarius" src="" />
+            </figure>
+            <p>
+              I am <span id="rolesMarius"></span><span id="rolesMarius2"></span>
+            </p>
+            <!-- maybe greetings in different languages in different times of the day? -->
+            <p id="introText">
+              Hello! I am Dutch Front-End developer living in Helsinki.
+            </p>
           </div>
-        </button>
-        <ul id="nav-id">
-          <li><a href="#">CV</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Hobby</a></li>
-          <li><a href="#contactInfo">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!-- about me, picture, i am is the main content -->
-    <main>
-      <section>
-        <div class="rowContainer">
-          <!-- make transition way smooter. Maybe rolling up or down -->
-          <figure id="roleImg">
-            <img id="imgRolesMarius" src="" />
-          </figure>
-          <p>
-            I am <span id="rolesMarius"></span><span id="rolesMarius2"></span>
-          </p>
-          <!-- maybe greetings in different languages in different times of the day? -->
-          <p id="introText">
-            Hello! I am Dutch Front-End developer living in Helsinki.
-          </p>
-        </div>
-      </section>
+        </section>
+      </main>
       <div class="area">
         <ul class="circles">
           <li></li>
@@ -69,7 +75,7 @@
           <li></li>
         </ul>
       </div>
-    </main>
+    </div>
 
     <!-- add -->
     <!-- projects -->
