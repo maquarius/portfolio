@@ -27,18 +27,18 @@
                 <img id="closeSVG" src="./images/icons/closing.svg" />
               </div>
               <ul id="linksCollapsible">
-                <li><a href="#">CV</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#cvDiv">CV</a></li>
                 <li><a href="#">Hobby</a></li>
-                <li><a href="#contactInfo">Contact</a></li>
+                <li><a href="#contactContainer">Contact</a></li>
               </ul>
             </div>
           </button>
           <ul id="nav-id">
-            <li><a href="#">CV</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#cvDiv">CV</a></li>
             <li><a href="#">Hobby</a></li>
-            <li><a href="#contactInfo">Contact</a></li>
+            <li><a href="#contactContainer">Contact</a></li>
           </ul>
         </nav>
       </header>
@@ -80,8 +80,11 @@
     </div>
 
     <!-- projects -->
-    <section>
-      <h2 id="projects">Projects</h2>
+    <section id="projects">
+      <h2 class="h2text">
+        Projects
+        <div class="h2Line"></div>
+      </h2>
       <div class="rowContainer">
         <div class="projectCard">
           <div class="projectText">
@@ -211,7 +214,6 @@
     </section>
     <!-- CV -->
     <section>
-      <h2>CV</h2>
       <div id="cvDiv">
         <div id="backgroundCv">
           <div class="circle" id="circle-1"></div>
@@ -233,7 +235,10 @@
 
     <!-- Footer -->
     <footer>
-      <h2 id="contactInfo">My contact info!</h2>
+      <h2 class="h2text">
+        Contact info
+        <div class="h2Line"></div>
+      </h2>
       <div id="contactContainer">
         <a href="https://github.com/maquarius">
           <div class="contactDiv">

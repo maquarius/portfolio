@@ -74,6 +74,7 @@ section{
     overflow: hidden;
 }
 
+
 /* Navigation */
 nav ul{
     display: flex;
@@ -164,7 +165,7 @@ nav ul a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 40px;
+    margin:  0px 40px 40px 40px;
 }
 
 .projectCard{
@@ -173,8 +174,8 @@ nav ul a:hover{
     justify-content:space-around;
     align-items: center;
     flex-wrap: wrap-reverse;
-    margin-top: 20px;
-    padding: 40px;
+    margin-top: 10px;
+    padding: 20px;
     width: 100%;
     
 }
@@ -309,12 +310,33 @@ nav ul a:hover{
 
 
 /* Footer */
+footer{
+    margin: 50px 0 30px 0;
+}
+.h2text{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 800;
+    font-size: 30px;
+    margin: 20px 0px 10px 5%;
+}
+
+.h2Line{
+    width: 85%;
+    height: 10px;
+    background-color: var(--main-color);
+    margin-right: 5%;
+    border-radius: 3px;
+}
+
 #contactContainer{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 100px 0px;
+
 }
 
 #contactContainer a {
