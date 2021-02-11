@@ -146,7 +146,6 @@ section{
     padding: 10px;
 }
 #rolesMarius{
-    background-color: var(--main-color);
     padding: 5px;
     transform: translate3d(-50%, 0px, 0px);
     transition: 0.6s;
@@ -241,6 +240,125 @@ section{
      box-shadow: 0 0.1rem rgba(121, 121, 121, 0.70)
  }
 
+ /* CV */
+#cvDiv{
+    width: 90%;
+    height: 200px;
+    background-color: #3bb1b1;
+    align-self: center;
+    border-radius: 20px;
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 2px 2px 4px  rgba(121, 121, 121, 0.90), -2px -2px 4px  rgba(121, 121, 121, 0.90);
+}
+#backgroundCv{
+    position: relative;;
+}
+
+
+.circle{
+    position: absolute;
+    border-radius: 50%;
+    }
+    
+    #circle-1{
+    height: 60vw;
+    width: 60vw;
+    top: -10vw;
+    right: -100vw;
+    background-color: white;
+    z-index: 1;
+    }
+    
+    #circle-2{
+    height: 60vw;
+    width: 60vw;
+    bottom: -0vw;
+    left: -30vw;
+    background-color: var(--main-color-dark);
+    z-index: 1;
+    }
+    #circle-3{
+    height: 60vw;
+    width: 60vw;
+    top: -5vw;
+    left: -35vw;
+    background-color: var(--main-color-light);
+    opacity: 0.3;
+    z-index: 1;
+    }
+    
+    #downloadCv{
+    margin: 0;
+    z-index: 2;
+    
+    }
+    #downloadText{
+        z-index: 2;
+        position: relative;
+        
+        font-size: 30px;
+    }
+    
+    #wink{
+        cursor: pointer;
+    }
+
+
+/* Footer */
+#contactContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 100px 0px;
+}
+
+#contactContainer a {
+    text-decoration: none;
+    color: var(--text-color);
+    
+    
+}
+.contactDiv{
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+    transition: all .2s ease-in;
+    border: 1px solid rgba(0, 0, 0, 0.096);
+    box-shadow: 10px 0.3rem 10px  rgba(121, 121, 121, 0.90);
+    border-radius: 5px;
+    padding: 15px;
+    width: 300px;
+    margin: 20px;
+}
+
+
+.contantIcon{
+    width: 40px;
+    height: 40px;
+    pointer-events: none;
+  
+
+}
+
+
+.contactDiv:hover{
+    filter: brightness(120%);
+    transform: scale(1.15);
+    transition: all .2s ease-in;
+    box-shadow: 2px 2px 4px  rgba(121, 121, 121, 0.90);
+}
+
+.contactText{
+    
+}
+
 /* media queries */
 
 @media only screen and (max-width: 600px){
@@ -276,73 +394,13 @@ section{
     
 }
 
-
-/* CV block */
-#cvDiv{
-    width: 90%;
-    height: 200px;
-    background-color: #3bb1b1;
-    align-self: center;
-    border-radius: 20px;
-    padding: 20px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    box-shadow: ;
-}
-#backgroundCv{
-    position: relative;;
-}
-
-
-.circle{
-position: absolute;
-border-radius: 50%;
-}
-
-#circle-1{
-height: 60vw;
-width: 60vw;
-top: -10vw;
-right: -100vw;
-background-color: white;
-z-index: 1;
-}
-
-#circle-2{
-height: 60vw;
-width: 60vw;
-bottom: -0vw;
-left: -30vw;
-background-color: var(--main-color-dark);
-z-index: 1;
-}
-#circle-3{
-height: 60vw;
-width: 60vw;
-top: -5vw;
-left: -35vw;
-background-color: var(--main-color-light);
-opacity: 0.3;
-z-index: 1;
-}
-
-#downloadCv{
-margin: 0;
-z-index: 2;
-}
-#downloadText{
-    z-index: 2;
-    position: relative;
+@media only screen and (max-width: 850px){
+    .projectText{
+        width: 100%;
+    }
     
-    font-size: 30px;
 }
 
-#wink{
-    cursor: pointer;
-}
 /* animated background */
 
 .area{
