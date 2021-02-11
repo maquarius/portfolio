@@ -41,7 +41,6 @@ const openMenu = () => {
   collapsible.style.display = "flex";
   collapsible.style.flexDirection = "column";
   collapsible.style.flexWrap = "wrap";
-  collapsible.style.width = "60px";
   collapsible.style.justifyContent = "center";
   collapsible.style.alignItems = "center";
 };

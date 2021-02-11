@@ -69,7 +69,6 @@ section{
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    margin: 5px 0px;
     padding: 10px;
     position: relative;
     overflow: hidden;
@@ -106,14 +105,14 @@ nav ul a:hover{
     background-color: var(--main-color);
     padding: 10px;
     border-radius: 10px;
-    margin: 20px;
-    border: 1px black solid;
-    transition: all .3s ;
+    border: 1px rgba(0, 0, 0, 0.493) solid;
+    box-shadow: 2px 2px 4px rgba(14, 13, 13, 0.144);
+    transition: all .1s ease-in ;
     cursor: pointer;
     display: none;
     position: fixed;
-    top: 0;
-    right: 0;
+    top: 20px;
+    right: 20px;
     outline: none;
     z-index: 3;
 }
@@ -121,8 +120,7 @@ nav ul a:hover{
 .hamburger:hover{
     filter: brightness(110%);
     transform: scale(1.1);
-    transition: all .3s ;
-    
+    transition: all .1s ease-in ;
 }
 #hamburgerSVG{
     width: 40px;
@@ -134,14 +132,28 @@ nav ul a:hover{
 #closeSVG{
     width: 20px;
     height: 20px;
+    transition: all .1s ease-in ;
+}
+
+#closeSVG:hover{
+    filter: brightness(110%);
+    transform: scale(1.4);
+    transition: all .1s ease-in ;
 }
 
 .collapsible{
     display: none;
-    
+    transition: all .3s ease-in ;
+}
+#linksCollapsible{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 #linksCollapsible  li{
-    padding-top: 25px;
+    padding: 10px;
+    width: 50px;
 }
 /* header. background animation is in the end of the file*/
 #rolesMarius{
@@ -211,7 +223,7 @@ nav ul a:hover{
     transition: all .1s ;
     flex-grow: 0;
     align-self: center;
-    
+    color: white;
  }
 
  .projectButton:hover{
