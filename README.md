@@ -5,9 +5,9 @@ Don't hesitate to send me a message if you liked my portfolio or if you have som
 
 ## Future
 This portfolio is still a work in progress right now (10-02-2021).
-- [ ] clean up code
-- [ ] host portfolio
+- [x] clean up code
+- [x] host portfolio
 - [ ] add gif of website
-- [ ] add Hotjar tracking
-- [ ] add Google tracking
-- [ ] do SEO checks in lighthouse
+- [x] add Hotjar tracking
+- [x] add Google tracking
+- [x] do SEO checks in lighthouse
