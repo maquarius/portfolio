@@ -4,7 +4,7 @@ const rolesArray = [
   { role: "a dwarf shadow priest", img: "images/MaffepriestSquare.jpg" },
   { role: "a Nederlander", img: "images/koningsdagSquare.jpg" },
   { role: "a database dabbler", img: "images/databasesquare.jpg" },
-  { role: "a Back-end novice", img: "images/backendSquare.png" },
+  { role: "a Back-End novice", img: "images/backendSquare.png" },
   { role: "an Avantouinti uimari", img: "images/avantouintiSquare.jpg" },
 ];
 
